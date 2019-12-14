@@ -1,2 +1,2 @@
-# arduino-basics
-Serials, FRC robot
+# Arduino
+For FRC robot
