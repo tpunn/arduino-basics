@@ -6,15 +6,15 @@ void setup() {
 }
 
 int makePrecise(long value, int maximum) {
-  return round((maximum-value)/2)*2;
+  return round((maximum - value) / 2) * 2;
 }
 
 void loop() {
   long x = analogRead(A2), y = analogRead(A1);
   // $123,-56
   Serial.print("$");
-  Serial.print(makePrecise(x,490));
+  Serial.print(makePrecise(x, 490));
   Serial.print(",");
-  Serial.print(makePrecise(y,502));
+  Serial.print(makePrecise(y, 502));
   Serial.print("\n");
 }
